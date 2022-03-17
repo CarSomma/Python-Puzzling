@@ -37,7 +37,15 @@ def print_my_solution(inputs):
 def who(list_1= [3,4,5]):                                                                                                  
     print(list_1)                                                                                          
                                                                                                             
-                                                      
+def print_my_solution_2(klist_,input_):
+    def decorate(func):
+        def inner(*args, **kwargs):
+            for k in klist_:
+                print(f"Input:\n{input_}")
+                print(f"Output:")
+                func(input_,k, **kwargs)
+        return inner
+    return decorate                                                    
                                                                                                             
 if __name__ == "__main__":
     who([3,4,5])                                                                                
