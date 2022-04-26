@@ -1,4 +1,5 @@
 """Here some useful function for solving the tasks"""
+
 def counter(input_list):
     """It counts the occurance of list items.
        It return a mapping between list item and occurance count
@@ -12,7 +13,7 @@ def counter(input_list):
     return count_dict
 
 
-def find_uniques(input_:list):
+def find_uniques(input_):
     """It returns unique values list from an input list """
     uniques = []
     for item in input_:
